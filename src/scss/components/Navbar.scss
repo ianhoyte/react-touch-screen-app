@@ -1,0 +1,70 @@
+@import "../core/variables.scss";
+
+nav.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 118px;
+  border-top: 1px solid rgba(0,0,0,.20);
+  transition: all .3s ease;
+  z-index: 1;
+  background: {
+    color: $grey-light;
+    image: url(../../img/commonage_logo.svg);
+    position: center;
+    repeat: no-repeat;
+    size: 140px;
+  }
+
+    .link {
+
+        &.right {
+            float: right;
+            margin-top: 15px;
+            margin-right: 40px;
+            a {
+                display: block;
+                color: $grey-dark;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
+                i {
+                    font-size: 65px;
+                }
+                span {
+                    padding-top: 5px;
+                    display: block;
+                }
+            }
+        }
+        // <Back> component
+        &.back {
+            float: left;
+            button {
+                color: $grey-dark;
+                padding: 0;
+                margin:23px 0 0 15px;
+                width: 120px;
+                position: relative;
+                border:none;
+                background-color: transparent;
+                text-align: left;
+                &:focus {
+                    border:none;
+                    box-shadow:none;
+                    outline:none;
+                }
+                i {
+                    font-size: 75px;
+                }
+                span {
+                    top: 50%;
+                    right: 5px;
+                    position: absolute;
+                    transform: translateY(-50%);    
+                }
+            }
+        }
+    }
+
+}

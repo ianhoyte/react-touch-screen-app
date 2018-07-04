@@ -1,0 +1,24 @@
+.HomeVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+    margin-top: 2px;
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.rh5v-Overlay_component, .rh5v-DefaultPlayer_controls {
+	display: none;
+}

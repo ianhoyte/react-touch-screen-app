@@ -1,0 +1,194 @@
+@import "../core/variables.scss";
+
+.siteplan-svg {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-top: 15px;
+    &.loaded {
+        opacity: 1;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 53%;
+        top: 47%;
+        transform: translate(-50%,-50%);
+    }
+
+    .site {
+        cursor: pointer;
+        polygon, path {
+            transition: all 0.3s ease;
+        }
+        &.sold {
+            polygon, path {
+                fill:$red;stroke:#FFFFFF;stroke-miterlimit:10;
+                cursor: default;
+            }
+            text {
+                display: none;
+                opacity: 0.2;
+                cursor: default;
+            }
+            &:hover {
+                polygon, path {
+                    fill:$red;
+                }
+            }
+        }
+    }
+
+    .maverickHome {
+        polygon, path {
+            fill:$lightBlue;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill:$lightBlue + 20;
+            }
+        }    
+    }
+
+    .singleFamily {
+        polygon, path {
+            fill:$blue;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill: $blue + 20;
+            }
+        }    
+    }
+
+    .homeSite {
+        polygon, path {
+            fill:$green;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill: $green + 20;   
+            }
+        }        
+    }
+
+   .oneLevelDuplex {
+        polygon, path {
+            fill:$darkOrange;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill: $darkOrange + 20;   
+            }
+        }        
+    }
+
+    .showhome {
+        polygon, path {
+            fill:$lightPurple;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill: $lightPurple + 20;   
+            }
+        }        
+    }
+
+    .lottery {
+        polygon, path {
+            fill:$orange;stroke:#FFFFFF;stroke-miterlimit:10;
+        }
+        &:hover {
+            polygon, path {
+                fill: $orange + 20;   
+            }
+        }        
+    }
+
+
+    /* other illustrator styles */
+    .st0{fill:none;}
+    .st1{fill:none;stroke:#EFEFEF;stroke-width:40;stroke-miterlimit:10;}
+    .st2{fill:#EFEFEF;stroke:#EFEFEF;stroke-width:12;stroke-miterlimit:10;}
+    .st3{fill:#EFEFEF;}
+    .st4{fill:#D6D6D6;}
+    .st5{fill:#979797;}
+    .st7{font-size:10.0004px;}
+    .st8{font-size:10px;}
+    .st9{font-size:10.0008px;}
+    .st10{font-size:10.0005px;}
+    .st11{fill:#382C99;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st12{fill:#F9F9F9;}
+    .st13{font-size:7.9997px;}
+    .st14{fill:#E6E5E3;}
+    .st15{font-size:8.0003px;}
+    .st16{fill:#988AC3;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st17{fill:#EC1F27;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st18{fill:#5F9ECC;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st19{fill:#EAAF06;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st20{display:none;}
+    .st21{display:inline;fill:#7BA638;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st22{display:inline;}
+    .st23{font-size:8px;}
+    .st24{fill:#7BA638;stroke:#F9F9F9;stroke-miterlimit:10;}
+    .st25{fill:#EA7424;stroke:#F9F9F9;stroke-miterlimit:10;}
+    /* end other illustrator styles */
+}
+
+.legend {
+    position: absolute;
+    right:225px;
+    bottom:145px;
+    list-style-type:none;
+    display: inline-block;;
+    border-collapse: separate;
+    border-spacing: 10px;
+    column-count: 2;
+    column-gap: 20px;
+    break-inside: avoid-column;
+    page-break-inside: avoid; 
+    padding:0;
+    max-width: 600px;
+    li {
+        display: inline-block;
+    }
+    .legend-item {
+        width: 35px;
+        height: 35px;
+        display: table-cell;
+        table-layout: fixed;
+        margin-bottom: 30px;
+        &.lightBlue {
+            background-color: $lightBlue;
+        }
+        &.orange {
+            background-color: $orange;
+        }
+        &.green {
+            background-color: $green;
+        }
+        &.dark-orange {
+            background-color: $darkOrange;
+        }
+        &.blue {
+            background-color: $blue;
+        }
+        &.lightPurple {
+            background-color: $lightPurple;
+        }
+        &.darkPurple {
+            background-color: $darkPurple;   
+        }
+        &.pink {
+            background-color: $pink;   
+        }
+        &.red {
+            background-color: $red;   
+        }
+    }
+    .item-title {
+        font-style: italic;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,27 @@
+// basic vars
+$pFont: 'Montserrat', sans-serif;
+$hFont: 'TradeGothicLTStd-Extended';
+
+$grey-light: #e9e9e9;
+$grey-dark: #474747;
+
+// svg colours
+$lightPurple: #988ac3;
+$lightBlue: #5f9ecc;
+$orange: #eaaf06;
+$darkOrange: #ea7424;
+$green: #7ba638;
+$blue: #293397;
+$darkPurple: #6f6b82;
+$pink: #c5a6d9;
+$red: #ec1f27;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
