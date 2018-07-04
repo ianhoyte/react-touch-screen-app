@@ -8,7 +8,3 @@ This is a react based app that uses [axios](https://www.npmjs.com/package/axios)
 * `npm start` starts the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and is licensed under the terms of the GNU GPLv3.
-
-## See Also
-
-* [The Undocumented NHL API](https://www.kevinsidwar.com/iot/2017/7/1/the-undocumented-nhl-stats-api)
